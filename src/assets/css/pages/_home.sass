@@ -1,0 +1,272 @@
+.home-page
+    position: relative
+    padding: 0
+
+    #intro
+        background:
+            image: url('../img/hero-bg.jpg')
+            repeat: no-repeat
+            size: cover
+            position: top left
+        height: 100vh
+        padding-top: 60px
+
+        .intro-img
+            margin: 4em auto 1.2em
+            padding: 0 .8em
+
+            img
+                margin: 0 auto
+
+        .cta
+            text-align: center
+            .btn-wrapp
+                text-align: center
+
+
+    .our-shops, .our-coffee
+        //height: 700px
+
+        .shop
+            background:
+                image: url('../img/men.jpg')
+                repeat: no-repeat
+                position: center 0
+                size: cover
+
+        .coffee
+            background:
+                image: url('../img/coffee-beans.jpg')
+                repeat: no-repeat
+                position: 0 center
+                size: cover
+
+
+    #follow
+        .follow-us
+            background:
+                color: $brown
+            text-align: center
+            padding: 4em 0
+
+            h2
+                color: $light-brown
+                position: relative
+
+                span.sm-logo
+                    display: block
+                    width: 61px
+                    height: 26px
+                    background:
+                        image: url('../img/small-logo.svg')
+                        repeat: no-repeat
+                    margin: 10px 0
+
+                    &.sm-logo-left,
+                    &.sm-logo-right
+                        position: absolute
+
+                    &.sm-logo-left
+                        left: 50%
+                        bottom: 100%
+                        margin-left: -2.25rem
+
+                    &.sm-logo-right
+                        right: 50%
+                        margin-right: -2.25rem
+
+        .coffee-for-all
+            background:
+                image: url('../img/beans-heands.jpg')
+                repeat: no-repeat
+                position: 80% 50%
+                size: cover
+            text-align: center
+            padding: 100px 0
+
+            h1
+                color: $primary-color
+
+    #instagram-feed
+
+        .no-gutter
+            .col-sm-7,
+            .col-sm-6,
+            .col-sm-5,
+            .col-md-4,
+            .col-sm-12
+                padding-left: 0
+                padding-right: 0
+
+        .items
+            display: block
+            background:
+                position: left center
+                repeat: no-repeat
+                size: cover
+
+            &.big-feed
+                height: 600px
+                background:
+                    image: url('../img/chairs.jpg')
+
+            &.small-feed-top-lf
+                height: 300px
+                background:
+                    image: url('../img/coffee-machine.jpg')
+
+            &.small-feed-top-rg
+                height: 300px
+                background:
+                    image: url('../img/old-machine.jpg')
+
+            &.small-feed-bottom-lf
+                height: 300px
+                background:
+                    image: url('../img/cup-coffee.jpg')
+
+            &.small-feed-bottom-rg
+                height: 300px
+                background:
+                    image: url('../img/coffee-filter.jpg')
+
+            &.small-feed-left-top
+                height: 300px
+                background:
+                    image: url('../img/inside.jpg')
+
+            &.small-feed-left-bottom
+                height: 300px
+                background:
+                    image: url('../img/cappuccino-1.jpg')
+
+            &.small-feed-right-top
+                height: 300px
+                background:
+                    image: url('../img/cappuccino-2.jpg')
+
+            &.small-feed-right-bottom
+                height: 300px
+                background:
+                    image: url('../img/filtering.jpg')
+
+        .subscribe
+            background:
+                color: $light-brown
+            padding: 2.5em 2em
+            text-align: center
+
+            .subscribe-input
+                margin: 0 auto
+                line-height: 4em
+
+                input
+                    background:
+                        color: transparent
+                    height: 60px
+                    border: 0
+
+                    &[type="email"]
+                        border: 2px solid $orange
+                        padding-left: 1.2em
+                        border-right: 0
+
+                        placeholder
+                            color: $brown
+
+                    &[type="submit"]
+                        background:
+                            color: $orange
+                        color: $light-brown
+
+                        &:hover
+                            background:
+                                color: $white-coffee
+                            color: $brown
+
+
+        .item-box
+            position: relative
+            overflow: hidden
+
+            .overlay
+                opacity: 0
+                transform: translate(100%,0%) scale(0.5) rotate(-90deg)
+                transition: $trans_all
+                cursor: pointer
+
+
+                &.orange
+                    background-color: fade-out($orange, 0.3)
+                    border: 10px solid $orange
+
+                img
+                    top: calc(50% - 62px)
+                    left: calc(50% - 62px)
+                    position: relative
+                    transform: scale(0.6)
+
+        .item-box:hover .overlay
+            opacity: 1
+            transform: translate(0%,0%) scale(1) rotate(0deg)
+
+@keyframes upDown
+    0%
+        opacity: 1
+        transform: translate(0, 0)
+
+    100%
+        opacity: 0.5
+        transform: translate(0, 50px)
+
+
+@keyframes fadeInLeftBig
+    from
+        opacity: 0
+        transform: translate3d(-2000px, 0, 0)
+
+    to
+        opacity: 1
+        transform: none
+
+@keyframes fadeInRightBig
+    from
+        opacity: 0
+        transform: translate3d(2000px, 0, 0)
+
+    to
+        opacity: 1
+        transform: none
+
+
+@media only screen and (min-width: $md-screen)
+    .home-page
+        #intro
+
+            .btn-wrapp
+                display: inline
+
+                &:first-child
+                    margin-right: 1.3em
+
+                &:last-child
+                    margin-left: 1.3em
+        
+        .item-box
+            .overlay
+                img
+                    top: calc(50% - 50px)
+                    left: calc(50% - 42px)
+                
+
+
+        #follow
+            .coffee-for-all
+                h1
+                    line-height: 3
+
+@media only screen and (min-width: 992px)
+    #instagram-feed
+        .subscribe
+            height: 600px
+            padding: 50% 2em !important

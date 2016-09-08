@@ -1,0 +1,46 @@
+<div id="main" class="product-page" ng-controller="MainCtrl" ng-init="getData()">
+    <!-- OUR WEBSHOP SECTION -->
+    <section id="product">
+        <div class="container">
+
+            <cart-icon></cart-icon>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="product-box">
+                       <div class="product-name">
+                            <img src="src/assets/img/placeholder.svg" />
+                       </div>
+                    </div><!--end product-box-->
+                </div><!--end col-->
+
+                <div class="col-md-8">
+                    <div class="product-details">
+                        <h2>{{item.title}}</h2>
+                        <div class="inline-price">
+                            300g | <span>{{item.price}}<sup>€</sup></span>
+                        </div><!--end inline-price-->
+                        <p>{{item.description}}</p>
+
+                        <div class="row add-to-cart">
+                            <button class="mybtn-add" ng-click="addCart(item)">
+                               Add to Cart
+                            </button>
+                            <button class="mybtn-remove" ng-click="removeCart(item)">
+                               Remove
+                            </button>
+                        </div><!-- end row -->
+
+
+                    </div><!--end product-box-->
+                </div><!--end col-->
+
+
+            </div><!--end row-->
+
+        </div><!--end container-->
+    </section><!--end product-->
+
+
+</div><!--end product-page-->

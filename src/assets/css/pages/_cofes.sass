@@ -1,0 +1,60 @@
+.cofes-page
+    position: relative
+    padding: 0
+
+    #intro
+        background:
+            image: url('../img/cofes-header.jpg')
+            repeat: no-repeat
+            size: cover
+            position: top left
+        height: 100vh
+        padding-top: 90px
+
+        .intro-heading
+            text-align: center
+
+            h1,h2
+                color: rgba($primary-color, 0.4)
+
+    .address-1, .address-2, .address-3
+        //height: 700px
+
+        .raviolli
+            background:
+                image: url('../img/img-1.jpg')
+                repeat: no-repeat
+                position: center 0
+                size: cover
+
+        .mall
+            background:
+                image: url('../img/img-2.jpg')
+                repeat: no-repeat
+                position: 0 center
+                size: cover
+
+        .doe-avenue
+            background:
+                image: url('../img/img-3.jpg')
+                repeat: no-repeat
+                position: 0 center
+                size: cover
+
+
+@media only screen and (min-width: $md-screen)
+    .cofes-page
+        #intro
+            height: auto
+            padding: 100px 0
+
+            .btn-wrapp
+                display: inline
+
+                &:first-child
+                    margin-right: 1.3em
+
+                &:last-child
+                    margin-left: 1.3em
+
+        
