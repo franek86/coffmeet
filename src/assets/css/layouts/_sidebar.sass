@@ -30,6 +30,7 @@
             margin: 0 auto 30px
             visibility: visible
             cursor: pointer
+            text-align: center
                 
             
         .logo
@@ -48,16 +49,17 @@
                 content: ""
                 padding-right: 50%
         
-        nav
-            
+        nav 
             li
                 a
                     font:
-                        size: 1.3rem
+                        size: 1.1rem
                         weight: bold
+                    padding: 10px 
                     text-transform: uppercase
                     color: $brown
                     transition: $trans_all
+                    text-align: center
                 
                     &:hover, 
                     &.active
@@ -65,12 +67,14 @@
                         border-right: 30px solid $orange
                 
         .line
+            display: none
             width: 85%
             border-color: $brown
+            margin: 0 auto
             
         .social-icons
             padding-left: 0px
-            margin: 0 auto
+            margin: 80px auto 0 40px
             
             li
                 display: inline-block
@@ -102,3 +106,19 @@
     to
         opacity: 1
         transfrom: none
+        
+@media only screen and (min-width: $sm-screen)
+    .sidebar
+        .sidebar-wrapper
+            nav
+                li
+                    a
+                        text-align: left
+                        padding: 10px
+                        font-size: 1.3rem
+                        
+            .line
+                display: block
+            
+            .social-icons
+                margin: 0 auto

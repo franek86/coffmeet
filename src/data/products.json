@@ -3,7 +3,7 @@
         "id" : 0,
         "title" : "Brazilian coffee",
         "price" : 10.49,
-        "image" : "src/assets/img/beans.jpg",
+        "image" : "src/assets/img/coffee-beans-1.jpg",
         "amount": 1,
         "description" : "Brazilian coffee ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -12,7 +12,7 @@
         "id" : 1,
         "title" : "Etiopian coffee",
         "price" : 15.99,
-        "image" : "assets/img/placeholder.svg",
+        "image" : "src/assets/img/coffee-grains.jpg",
         "amount": 1,
         "description" : "Etiopian coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -21,7 +21,7 @@
         "id" : 2,
         "title" : "Colobian coffee",
         "price" : 16.89,
-        "image" : "assets/img/placeholder.svg",
+        "image" : "src/assets/img/coffee-beans-2.jpg",
         "amount": 1,
         "description" : "Colobian coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -30,7 +30,7 @@
         "id" : 3,
         "title" : "Italian coffee",
         "price" : 11.55,
-        "image" : "assets/img/placeholder.svg",
+        "image" : "src/assets/img/coffee-beans-3.jpg",
         "amount": 1,
         "description" : "Italian coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -39,7 +39,7 @@
         "id" : 4,
         "title" : "Nos coffee",
         "price" : 10.89,
-        "image" : "assets/img/placeholder.svg",
+        "image" : "src/assets/img/coffee-beans-4.jpg",
         "amount": 1,
         "description" : "Nos coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -48,7 +48,7 @@
         "id" : 5,
         "title" : "Dolce coffee",
         "price" : 9.99,
-        "image" : "assets/img/placeholder.svg",
+        "image" : "src/assets/img/coffee-beans-5.jpg",
         "amount": 1,
         "description" : "Dolce coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     }

@@ -40,8 +40,7 @@ gulp.task('allAngular', function(){
 // Bootstrap and font-awesome css compile in deps.css
 gulp.task('cssLibs', function(){
   gulp.src([
-    'bower_components/bootstrap/dist/css/bootstrap.min.css',
-    'bower_components/font-awesome/css/font-awesome.min.css'
+    'bower_components/bootstrap/dist/css/bootstrap.min.css'
   ])
   .pipe(concat('deps.css'))
   .pipe(gulp.dest('src/assets/css'));
