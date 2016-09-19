@@ -4,7 +4,7 @@
         "title" : "Brazilian coffee",
         "price" : 10.49,
         "thumb" : "src/assets/img/thumb-1.jpg",
-        "image" : "src/assets/img/coffee-beans-1.jpg",
+        "image" : "src/assets/img/brazillian.jpg",
         "amount": 1,
         "description" : "Brazilian coffee ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -14,7 +14,7 @@
         "title" : "Etiopian coffee",
         "price" : 15.99,
         "thumb" : "src/assets/img/thumb-2.jpg",
-        "image" : "src/assets/img/coffee-grains.jpg",
+        "image" : "src/assets/img/etiopian.jpg",
         "amount": 1,
         "description" : "Etiopian coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -24,7 +24,7 @@
         "title" : "Colobian coffee",
         "price" : 16.89,
         "thumb" : "src/assets/img/thumb-3.jpg",
-        "image" : "src/assets/img/coffee-beans-2.jpg",
+        "image" : "src/assets/img/colombian.jpg",
         "amount": 1,
         "description" : "Colobian coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -34,7 +34,7 @@
         "title" : "Italian coffee",
         "price" : 11.55,
         "thumb" : "src/assets/img/thumb-4.jpg",
-        "image" : "src/assets/img/coffee-beans-3.jpg",
+        "image" : "src/assets/img/italian.jpg",
         "amount": 1,
         "description" : "Italian coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -44,7 +44,7 @@
         "title" : "Nos coffee",
         "price" : 10.89,
         "thumb" : "src/assets/img/thumb-5.jpg",
-        "image" : "src/assets/img/coffee-beans-4.jpg",
+        "image" : "src/assets/img/noscafe.jpg",
         "amount": 1,
         "description" : "Nos coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     },
@@ -54,7 +54,7 @@
         "title" : "Dolce coffee",
         "price" : 9.99,
         "thumb" : "src/assets/img/thumb-6.jpg",
-        "image" : "src/assets/img/coffee-beans-5.jpg",
+        "image" : "src/assets/img/dolce.jpg",
         "amount": 1,
         "description" : "Dolce coffee dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde consequuntur, incidunt omnis consequatur qui magnam commodi cum. Id animi nobis molestiae, at cum nostrum eum voluptate, vitae nemo dicta amet!"
     }
