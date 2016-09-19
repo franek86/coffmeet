@@ -109,7 +109,7 @@ html, body {
             transform-origin: 50% 50%; }
   html .cart-icon, body .cart-icon {
     position: absolute;
-    right: 50px;
+    right: 20px;
     top: 30px;
     color: #745946;
     z-index: 1; }
@@ -779,8 +779,7 @@ p {
           -ms-flex-align: center;
               align-items: center;
       width: 100%;
-      height: 300px;
-      border: 1px solid #e3a478;
+      height: 220px;
       margin-bottom: 30px;
       cursor: pointer;
       -webkit-transition: all 0.3s ease-in-out;
@@ -788,20 +787,24 @@ p {
       .webshop-page #products .product-box .product-name {
         text-align: center;
         z-index: 2; }
+        .webshop-page #products .product-box .product-name h4, .webshop-page #products .product-box .product-name h5 {
+          color: #ffffff; }
       .webshop-page #products .product-box .product-img {
         position: absolute;
         height: 100%;
         top: 0;
         left: 0;
         z-index: 1; }
-        .webshop-page #products .product-box .product-img h4, .webshop-page #products .product-box .product-img h5 {
-          color: #f7f6e4; }
 
 @media only screen and (max-width: 768px) {
   #products .product-box {
     width: 300px !important;
     margin-right: auto;
     margin-left: auto; } }
+
+@media only screen and (max-width: 29em) {
+  #products .product-box {
+    width: 100% !important; } }
 
 .product-page {
   padding: 100px 0;
