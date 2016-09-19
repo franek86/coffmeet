@@ -537,11 +537,12 @@ p {
         height: 60px;
         border: 0; }
         .home-page #instagram-feed .subscribe .subscribe-input input[type="email"] {
+          width: 150px;
           border: 2px solid #e3a478;
           padding-left: 1.2em;
           border-right: 0; }
           .home-page #instagram-feed .subscribe .subscribe-input input[type="email"] placeholder {
-            color: #745946; }
+            color: red; }
         .home-page #instagram-feed .subscribe .subscribe-input input[type="submit"] {
           background-color: #e3a478;
           color: #d4c098; }
