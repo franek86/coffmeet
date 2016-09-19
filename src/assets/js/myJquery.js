@@ -3,7 +3,6 @@
     fadeDivs();
 })();
 
-
 function toggleSideBar(){
 
     var $open = $('.open-sidebar'),
@@ -26,11 +25,9 @@ function toggleSideBar(){
     });
 
     $('a[href^="#"]').on('click', function(event){
-
         $sidebar.css('left', '-100%').removeClass('js-fade');
         $main.css('margin-left', '0px');
         $overlay.remove();
-
     });
 
 }

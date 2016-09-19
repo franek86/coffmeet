@@ -891,13 +891,15 @@ p {
   .item-box .img-responsive {
     max-width: 20%; } }
 
-.checkout-page h3 {
-  text-align: center; }
-
-.checkout-page .payment {
-  height: 350px;
-  padding-top: 20px;
-  margin: 50px 0;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  background-color: rgba(116, 89, 70, 0.6); }
+.checkout-page {
+  padding-top: 60px;
+  background-color: #e3e3d7; }
+  .checkout-page h3 {
+    text-align: center; }
+  .checkout-page .payment {
+    height: 350px;
+    padding-top: 20px;
+    margin: 50px 0;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: rgba(116, 89, 70, 0.6); }
