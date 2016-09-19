@@ -58,14 +58,14 @@ function fadeDivs(){
             if(scrollWidth > $('#shop').offset().top - $(window).height()){
                 $('.bg.shop').css({
                     'background-position' : 'center' + (scrollWidth - $('#shop').offset().top)  + 'px',
-                    'background-attachment' : 'fixed'
+                    'background-attachment' : 'scroll'
                 });
             }
 
             if(scrollWidth > $('#coffee').offset().top - $(window).height()){
                 $('.bg.coffee').css({
                     'background-position' : 'center' + (scrollWidth - $('#coffee').offset().top)  + 'px',
-                    'background-attachment' : 'fixed'
+                    'background-attachment' : 'scroll'
                 });
             }
         }
