@@ -863,7 +863,7 @@ p {
         .cart-page .panel-info .panel-body .item-box .control-item {
           margin-top: 30px; }
     .cart-page .panel-info .panel-footer .btn-success {
-      width: 200px;
+      width: 100%;
       background-color: #745946;
       border-color: transparent;
       text-transform: uppercase; }
@@ -881,6 +881,7 @@ p {
           border: none;
           outline: none; }
         .cart-page .panel-info .panel-footer .cupon input[type="submit"] {
+          margin-top: 20px;
           background-color: #745946;
           color: white; }
           .cart-page .panel-info .panel-footer .cupon input[type="submit"]:hover {
