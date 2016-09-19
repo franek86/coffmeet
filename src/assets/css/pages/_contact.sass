@@ -10,7 +10,7 @@
         input, textarea
             width: 100%
             margin-bottom: 20px
-            padding: 20px 6em
+            padding: 20px 2em
             border: 2px solid $orange
 
             &:focus
@@ -41,4 +41,10 @@
         .bg-success
             background:
                 color: green
-       
+
+
+@media only screen and (max-width: $sm-screen)
+  .contact-page
+    .contact-container
+      input, textarea
+        padding: 10px

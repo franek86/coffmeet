@@ -731,7 +731,7 @@ p {
     .contact-page .contact-container input, .contact-page .contact-container textarea {
       width: 100%;
       margin-bottom: 20px;
-      padding: 20px 6em;
+      padding: 20px 2em;
       border: 2px solid #e3a478; }
       .contact-page .contact-container input:focus, .contact-page .contact-container textarea:focus {
         border: none;
@@ -753,6 +753,10 @@ p {
       color: white; }
     .contact-page .contact-container .bg-success {
       background-color: green; }
+
+@media only screen and (max-width: 29em) {
+  .contact-page .contact-container input, .contact-page .contact-container textarea {
+    padding: 10px; } }
 
 .webshop-page {
   background-color: #e2d5c1;

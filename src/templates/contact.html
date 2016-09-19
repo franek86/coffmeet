@@ -10,12 +10,13 @@
 
         <div class="contact-container" ng-controller="ContactPageCtrl">
             <form name="contactform" method="post" action="" role="form" validation ng-submit=submit(contactform)>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div ng-hide="formError()" ng-class="result">
-                            {{resultMessage}}
-                        </div>
-                    </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div ng-hide="formError()" ng-class="result">
+                              {{resultMessage}}
+                          </div>
+                      </div>
+                    </div><!--end row-->
 
                     <div class="col-md-12">
                         <input type="text" name="name" ng-model="contactData.name" placeholder="Full Name" ng-minlength="3" required>
@@ -32,7 +33,7 @@
                     <div class="col-md-1">
                         <input type="button" class="btn-submit" ng-disabled="submitButtonDisabled" ng-click="submit(contactform)" value="Send">
                     </div>
-                </div><!--end row-->
+
             </form><!--end contact-form-->
         </div><!-- end contact-container-->
 
