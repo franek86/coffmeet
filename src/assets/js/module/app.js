@@ -14,18 +14,6 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
             templateUrl: 'src/templates/cofes.html',
             controller: 'MainCtrl'
         })
-        .when('/raviolli', {
-            templateUrl: 'src/templates/raviolli.html',
-            controller: 'MainCtrl'
-        })
-        .when('/themall', {
-            templateUrl: 'src/templates/themall.html',
-            controller: 'MainCtrl'
-        })
-        .when('/doeavenue', {
-            templateUrl: 'src/templates/doeavenue.html',
-            controller: 'MainCtrl'
-        })
         .when('/products', {
             templateUrl: 'src/templates/products.html',
             controller: 'MainCtrl'
