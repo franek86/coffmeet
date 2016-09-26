@@ -1,4 +1,5 @@
 html, body
+    height: 100%
     font-family: 'Roboto', 'Helivetica', 'Verdana', sans-serif
     font-size: 14px
     font-weight: normal
@@ -49,68 +50,69 @@ html, body
         z-index: 9
         overflow-x: hidden
 
-    #main
+    #main-content
+      min-height: calc(100vh - 205px)
 
-        .padding-none
-            padding: 0
+      #main
 
-            .bg
-                height: 100%
-                width: 100%
-                display: block
+          .padding-none
+              padding: 0
 
-            .box
-                //height: 100%
-                padding-top: 4.2em
-                padding-bottom: 4.2em
-                text-align: center
+              .bg
+                  height: 100%
+                  width: 100%
+                  display: block
 
-                &.primary-color
-                    background:
-                        color: $primary-color
+              .box
+                  //height: 100%
+                  padding-top: 4.2em
+                  padding-bottom: 4.2em
+                  text-align: center
 
-                &.white-coffee
-                    background:
-                        color: $white-coffee
+                  &.primary-color
+                      background:
+                          color: $primary-color
 
-                .desc
-                    padding: 4.2em 10% 0px
-                    text-align: justify
+                  &.white-coffee
+                      background:
+                          color: $white-coffee
 
+                  .desc
+                      padding: 4.2em 10% 0px
+                      text-align: justify
 
+      .move-right
+          &.js-fadeleft
+              animation-name: fadeInLeftBig
+              animation-duration: 2s
+              animation-fill-mode: both
 
-    .move-right
-        &.js-fadeleft
-            animation-name: fadeInLeftBig
-            animation-duration: 2s
-            animation-fill-mode: both
+      .move-left
+          &.js-faderight
+              animation-name: fadeInRightBig
+              animation-duration: 2s
+              animation-fill-mode: both
 
-    .move-left
-        &.js-faderight
-            animation-name: fadeInRightBig
-            animation-duration: 2s
-            animation-fill-mode: both
+      .arrow-down
+          width: 25px
+          height: 37px
+          background:
+              image: url('../img/arrow-down.png')
+              repeat: no-repeat
+              position: center
+          margin: 30px auto 0
+          padding: 1.8em 1em
 
-    .arrow-down
-        width: 25px
-        height: 37px
-        background:
-            image: url('../img/arrow-down.png')
-            repeat: no-repeat
-            position: center
-        margin: 30px auto 0
-        padding: 1.8em 1em
+          animation: upDown ease-in-out 2s
+          animation-iteration-count: infinite
+          transform-origin: 50% 50%
 
-        animation: upDown ease-in-out 2s
-        animation-iteration-count: infinite
-        transform-origin: 50% 50%
-
-    .cart-icon
-        position: absolute
-        right: 20px
-        top: 30px
-        color: $brown
-        z-index: 1
+      .cart-icon
+          position: absolute
+          right: 20px
+          top: 30px
+          color: $brown
+          z-index: 1
 
 @media only screen and (min-width: $md-screen)
     #main
