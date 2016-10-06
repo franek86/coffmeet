@@ -454,7 +454,8 @@ p {
     background-image: url("../img/men.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
-    background-size: cover; }
+    background-size: cover;
+    background-opacity: 0; }
   .home-page .our-shops .coffee, .home-page .our-coffee .coffee {
     background-image: url("../img/coffee-beans.jpg");
     background-repeat: no-repeat;
