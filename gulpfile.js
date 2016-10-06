@@ -69,6 +69,12 @@ gulp.task('sass', function(){
   .pipe(browserSync.reload({stream: true}));
 });
 
+/** index task **/
+gulp.task('index', function(){
+  return gulp.src('./index.html')
+    .pipe(reload({stream: true}));;
+});
+
 
 /** watch changes css, js, jade. html file **/
 gulp.task('watch', function(){
@@ -80,4 +86,4 @@ gulp.task('watch', function(){
 
 
 // Default gulp task
-gulp.task('default', ['browser-sync','allAngular','watch']);
+gulp.task('default', ['browser-sync','allAngular','index','watch']);
