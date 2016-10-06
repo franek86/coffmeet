@@ -76,7 +76,7 @@ gulp.task('index', function(){
 });
 
 
-/** watch changes css, js, jade. html file **/
+/** watch changes css, js,. html file **/
 gulp.task('watch', function(){
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch('assets/js/**', ['allAngular']);
