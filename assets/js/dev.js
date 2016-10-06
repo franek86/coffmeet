@@ -41,7 +41,7 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
 
         .otherwise({
             redirectTo: '/404',
-            templateUrl: 'templates/404.html'
+            templateUrl: 'https://franek86.github.io/coffmeet/templates/404.html'
         });
 
   }]);
@@ -149,7 +149,7 @@ app.controller('MainCtrl', ['$scope', '$http', '$routeParams','$localStorage', f
 app.directive('cartIcon', function(){
   return{
     restrict: 'E',
-    templateUrl: 'templates/cartIcon.html',
+    templateUrl: 'https://franek86.github.io/coffmeet/templates/cartIcon.html',
     controller: 'MainCtrl'
   }
 });
