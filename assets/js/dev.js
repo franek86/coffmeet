@@ -3,45 +3,45 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
 
     $routeProvider
         .when('/', {
-            templateUrl: 'src/templates/home.html',
+            templateUrl: 'templates/home.html',
             controller: 'MainCtrl'
         })
         .when('/about', {
-            templateUrl: 'src/templates/about.html',
+            templateUrl: 'templates/about.html',
             controller: 'MainCtrl'
         })
         .when('/cofes', {
-            templateUrl: 'src/templates/cofes.html',
+            templateUrl: 'templates/cofes.html',
             controller: 'MainCtrl'
         })
         .when('/products', {
-            templateUrl: 'src/templates/products.html',
+            templateUrl: 'templates/products.html',
             controller: 'MainCtrl'
         })
         .when('/products/:id', {
-            templateUrl: 'src/templates/product.html',
+            templateUrl: 'templates/product.html',
             controller: 'MainCtrl'
         })
         .when('/contact', {
-            templateUrl: 'src/templates/contact.html',
+            templateUrl: 'templates/contact.html',
             controller: 'ContactPageCtrl'
         })
         .when('/account', {
-            templateUrl: 'src/templates/account.html',
+            templateUrl: 'templates/account.html',
             controller: 'MainCtrl'
         })
         .when('/cart', {
-            templateUrl: 'src/templates/cart.html',
+            templateUrl: 'templates/cart.html',
             controller: 'MainCtrl'
         })
         .when('/checkout', {
-            templateUrl: 'src/templates/checkout.html',
+            templateUrl: 'templates/checkout.html',
             controller: 'MainCtrl'
         })
 
         .otherwise({
             redirectTo: '/404',
-            templateUrl: 'src/templates/404.html'
+            templateUrl: 'templates/404.html'
         });
 
   }]);
@@ -93,7 +93,7 @@ app.controller('MainCtrl', ['$scope', '$http', '$routeParams','$localStorage', f
   $scope.cart = [];
 
   $scope.getData   =  function(){
-    $http.get('src/data/products.json')
+    $http.get('data/products.json')
             .then(function(res){
               if(res.data != 'null'){
                 $scope.products = res.data;
@@ -149,7 +149,7 @@ app.controller('MainCtrl', ['$scope', '$http', '$routeParams','$localStorage', f
 app.directive('cartIcon', function(){
   return{
     restrict: 'E',
-    templateUrl: 'src/templates/cartIcon.html',
+    templateUrl: 'templates/cartIcon.html',
     controller: 'MainCtrl'
   }
 });

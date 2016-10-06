@@ -4,7 +4,7 @@ app.controller('MainCtrl', ['$scope', '$http', '$routeParams','$localStorage', f
   $scope.cart = [];
 
   $scope.getData   =  function(){
-    $http.get('src/data/products.json')
+    $http.get('data/products.json')
             .then(function(res){
               if(res.data != 'null'){
                 $scope.products = res.data;

@@ -1,5 +1,4 @@
 var gulp    = require('gulp'),
-    jshint  = require('gulp-jshint'),
     concat  = require('gulp-concat'),
     minifyCss = require('gulp-minify-css'),
     browserSync  = require('browser-sync').create(),
@@ -7,11 +6,6 @@ var gulp    = require('gulp'),
     sass  = require('gulp-sass'),
     prefix  = require('gulp-autoprefixer');
 
-gulp.task('jshint', function(){
-    gulp.src('src/assets/js/main.js')
-    .pipe(jshint)
-    .pipe(jshint.reporter('default'));
-});
 
 // All Javascrips libraries, jQuery,angularjs,angular-route,ngstorage and bootstrap compile in the one script deps.js
 gulp.task('libs', function(){
@@ -23,18 +17,18 @@ gulp.task('libs', function(){
        'bower_components/bootstrap/dist/js/bootstrap.min.js'
    ])
    .pipe(concat('deps.js'))
-   .pipe(gulp.dest('src/assets/js'));
+   .pipe(gulp.dest('assets/js'));
 });
 
 //Concat Angular controllers, directives, modules and json file in dev.js
 gulp.task('allAngular', function(){
   gulp.src([
-    'src/assets/js/module/*.js',
-    'src/assets/js/controllers/*.js',
-    'src/assets/js/directives/*.js'
+    'assets/js/module/*.js',
+    'assets/js/controllers/*.js',
+    'assets/js/directives/*.js'
   ])
   .pipe(concat('dev.js'))
-  .pipe(gulp.dest('src/assets/js'));
+  .pipe(gulp.dest('assets/js'));
 });
 
 // Bootstrap and font-awesome css compile in deps.css
@@ -43,26 +37,26 @@ gulp.task('cssLibs', function(){
     'bower_components/bootstrap/dist/css/bootstrap.min.css'
   ])
   .pipe(concat('deps.css'))
-  .pipe(gulp.dest('src/assets/css'));
+  .pipe(gulp.dest('assets/css'));
 });
 
 //Minify Main Style
 gulp.task('minify-css', function(){
-  return gulp.src('src/assets/css/coffmeet.css')
+  return gulp.src('assets/css/coffmeet.css')
     .pipe(minifyCss({keepSpecialComments: 1}))
-    .pipe(gulp.dest('src/assets/css'));
+    .pipe(gulp.dest('assets/css'));
 });
 
 // All SASS imports to SCSS and compile to CSS
 gulp.task('sass', function(){
-  gulp.src('src/assets/css/coffmeet.scss')
+  gulp.src('assets/css/coffmeet.scss')
   .pipe(sass({
     includePaths: ['css'],
     style: 'compressed'
   }))
   .on('error', console.error.bind(console))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7']))
-  .pipe(gulp.dest('src/assets/css'))
+  .pipe(gulp.dest('assets/css'))
   .pipe(browserSync.reload({stream: true}));
 });
 
@@ -72,9 +66,9 @@ gulp.task('serve', function(){
        server:"./"
    });
 
-   gulp.watch('src/assets/css/**', ['sass']);
-   gulp.watch('src/assets/js/**', ['allAngular']);
-   gulp.watch('src/templates/*.html');
+   gulp.watch('assets/css/**', ['sass']);
+   gulp.watch('assets/js/**', ['allAngular']);
+   gulp.watch('templates/*.html');
 });
 
 
