@@ -2,17 +2,11 @@ var gulp    = require('gulp'),
     jshint  = require('gulp-jshint'),
     concat  = require('gulp-concat'),
     minifyCss = require('gulp-minify-css'),
-    browserSync  = require('browser-sync').create(),
+    browserSync  = require('browser-sync'),
     reload  =   browserSync.reload,
     sass  = require('gulp-sass'),
     prefix  = require('gulp-autoprefixer');
-
-gulp.task('jshint', function(){
-    gulp.src('src/assets/js/main.js')
-    .pipe(jshint)
-    .pipe(jshint.reporter('default'));
-});
-
+    
 // All Javascrips libraries, jQuery,angularjs,angular-route,ngstorage and bootstrap compile in the one script deps.js
 gulp.task('libs', function(){
    gulp.src([
