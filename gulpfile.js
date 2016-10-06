@@ -1,10 +1,18 @@
 var gulp    = require('gulp'),
     concat  = require('gulp-concat'),
     minifyCss = require('gulp-minify-css'),
-    browserSync  = require('browser-sync').create(),
+    browserSync  = require('browser-sync'),
     reload  =   browserSync.reload,
     sass  = require('gulp-sass'),
     prefix  = require('gulp-autoprefixer');
+
+gulp.task('browser-sync', ['sass'], function(){
+  browserSync({
+    server: {
+      baseDir: './'
+    }
+  });
+});
 
 
 // All Javascrips libraries, jQuery,angularjs,angular-route,ngstorage and bootstrap compile in the one script deps.js
@@ -60,17 +68,21 @@ gulp.task('sass', function(){
   .pipe(browserSync.reload({stream: true}));
 });
 
-// Gulp server run
-gulp.task('serve', function(){
-   browserSync.init({
-       server:"./"
-   });
+// // Gulp server run
+// gulp.task('serve', function(){
+//    browserSync.init({
+//        server:"./"
+//    });
+// });
 
-   gulp.watch('assets/css/**', ['sass']);
-   gulp.watch('assets/js/**', ['allAngular']);
-   gulp.watch('templates/*.html');
+/** watch changes css, js, jade. html file **/
+gulp.task('watch', function(){
+    gulp.watch('assets/css/**', ['sass']);
+    gulp.watch('assets/js/**', ['allAngular']);
+    gulp.watch('templates/*.html');
+    gulp.watch('./*.html').on('change', reload);
 });
 
 
 // Default gulp task
-gulp.task('default', ['sass', 'serve']);
+gulp.task('default', ['browser-sync','allAngular','watch']);
