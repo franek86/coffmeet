@@ -3,7 +3,7 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
 
     $routeProvider
         .when('/', {
-            templateUrl: 'https://franek86.github.io/coffmeet/templates/home.html',
+            templateUrl: './templates/home.html',
             controller: 'MainCtrl'
         })
         .when('/about', {
