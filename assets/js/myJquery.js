@@ -45,7 +45,7 @@ function fadeDivs(){
             }
 
 
-            if(scrollWidth > $('#coffee').offset().top - ($(window).height() / 5)){
+            if(scrollWidth > $('#coffee').offset().top - ($(window).height() / 3)){
                 $('#coffee .move-right').addClass('js-fadeleft');
                 $('#coffee .move-left').addClass('js-faderight');
             }

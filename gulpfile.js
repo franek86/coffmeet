@@ -68,19 +68,13 @@ gulp.task('sass', function(){
   .pipe(browserSync.reload({stream: true}));
 });
 
-// // Gulp server run
-// gulp.task('serve', function(){
-//    browserSync.init({
-//        server:"./"
-//    });
-// });
 
 /** watch changes css, js, jade. html file **/
 gulp.task('watch', function(){
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch('assets/js/**', ['allAngular']);
     gulp.watch('templates/*.html');
-    gulp.watch('./*.html').on('change', reload);
+    gulp.watch('index.html').on('change', reload);
 });
 
 
