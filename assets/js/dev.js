@@ -41,7 +41,7 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
 
         .otherwise({
             redirectTo: '/404',
-            templateUrl: 'https://franek86.github.io/coffmeet/templates/404.html'
+            templateUrl: 'templates/404.html'
         });
 
   }]);
