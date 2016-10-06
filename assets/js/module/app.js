@@ -7,35 +7,35 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
             controller: 'MainCtrl'
         })
         .when('/about', {
-            templateUrl: 'templates/about.html',
+            templateUrl: 'https://franek86.github.io/coffmeet/templates/about.html',
             controller: 'MainCtrl'
         })
         .when('/cofes', {
-            templateUrl: 'templates/cofes.html',
+            templateUrl: 'https://franek86.github.io/coffmeet/templates/cofes.html',
             controller: 'MainCtrl'
         })
         .when('/products', {
-            templateUrl: 'templates/products.html',
+            templateUrl: 'thttps://franek86.github.io/coffmeet/emplates/products.html',
             controller: 'MainCtrl'
         })
         .when('/products/:id', {
-            templateUrl: 'templates/product.html',
+            templateUrl: 'https://franek86.github.io/coffmeet/templates/product.html',
             controller: 'MainCtrl'
         })
         .when('/contact', {
-            templateUrl: 'templates/contact.html',
+            templateUrl: 'https://franek86.github.io/coffmeet/templates/contact.html',
             controller: 'ContactPageCtrl'
         })
         .when('/account', {
-            templateUrl: 'templates/account.html',
+            templateUrl: 'https://franek86.github.io/coffmeet/templates/account.html',
             controller: 'MainCtrl'
         })
         .when('/cart', {
-            templateUrl: 'templates/cart.html',
+            templateUrl: 'https://franek86.github.io/coffmeet/templates/cart.html',
             controller: 'MainCtrl'
         })
         .when('/checkout', {
-            templateUrl: 'templates/checkout.html',
+            templateUrl: 'https://franek86.github.io/coffmeet/templates/checkout.html',
             controller: 'MainCtrl'
         })
 
