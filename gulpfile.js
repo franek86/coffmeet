@@ -68,8 +68,14 @@ gulp.task('sass', function(){
   .pipe(browserSync.reload({stream: true}));
 });
 
+/** index task **/
+gulp.task('index', function(){
+  return gulp.src('./index.html')
+    .pipe(reload({stream: true}));;
+});
 
-/** watch changes css, js, jade. html file **/
+
+/** watch changes css, js,. html file **/
 gulp.task('watch', function(){
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch('assets/js/**', ['allAngular']);
@@ -79,4 +85,4 @@ gulp.task('watch', function(){
 
 
 // Default gulp task
-gulp.task('default', ['browser-sync','allAngular','watch']);
+gulp.task('default', ['browser-sync','allAngular','index','watch']);
