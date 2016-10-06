@@ -5,9 +5,7 @@ var gulp    = require('gulp'),
     reload  =   browserSync.reload,
     sass  = require('gulp-sass'),
     prefix  = require('gulp-autoprefixer');
-<<<<<<< HEAD
-    
-=======
+
 
 gulp.task('browser-sync', ['sass'], function(){
   browserSync({
@@ -18,7 +16,6 @@ gulp.task('browser-sync', ['sass'], function(){
 });
 
 
->>>>>>> gh-pages
 // All Javascrips libraries, jQuery,angularjs,angular-route,ngstorage and bootstrap compile in the one script deps.js
 gulp.task('libs', function(){
    gulp.src([
