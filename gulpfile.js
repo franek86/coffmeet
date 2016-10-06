@@ -72,9 +72,9 @@ gulp.task('serve', function(){
        server:"./"
    });
 
-   gulp.watch('src/assets/css/**', ['sass']);
-   gulp.watch('src/assets/js/**', ['allAngular']);
-   gulp.watch('src/templates/*.html');
+   gulp.watch('./assets/css/**', ['sass']);
+   gulp.watch('./assets/js/**', ['allAngular']);
+   gulp.watch('./templates/*.html');
 });
 
 
