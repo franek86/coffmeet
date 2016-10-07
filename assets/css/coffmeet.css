@@ -169,12 +169,12 @@ html, body {
     text-align: center; }
     .sidebar .sidebar-wrapper .close-sidebar {
       padding-top: 30px;
-      padding-left: 100px;
       visibility: visible;
       cursor: pointer; }
       .sidebar .sidebar-wrapper .close-sidebar img {
         max-height: 70px; }
     .sidebar .sidebar-wrapper .logo {
+      display: none;
       text-indent: -9999px;
       display: block;
       background-image: url(../img/logo.svg);
@@ -201,7 +201,7 @@ html, body {
         border-right: 30px solid #e3a478; }
     .sidebar .sidebar-wrapper .social-icons {
       padding-left: 0px;
-      margin: 80px auto 0 40px; }
+      margin: 40px auto; }
       .sidebar .sidebar-wrapper .social-icons li {
         display: inline-block; }
       .sidebar .sidebar-wrapper .social-icons .icon-sprite {
@@ -241,6 +241,8 @@ html, body {
       text-align: center;
       padding: 10px;
       font-size: 3rem; }
+    .sidebar .sidebar-wrapper .logo {
+      display: block; }
     .sidebar .sidebar-wrapper .social-icons {
       margin: 0 auto; } }
 
