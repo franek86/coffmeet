@@ -187,7 +187,7 @@ html, body {
         content: "";
         padding-right: 50%; }
     .sidebar .sidebar-wrapper nav li a {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: bold;
       padding: 10px;
       text-transform: uppercase;
@@ -242,9 +242,9 @@ html, body {
   .sidebar {
     height: 100%; }
     .sidebar .sidebar-wrapper nav li a {
-      text-align: left;
+      text-align: center;
       padding: 10px;
-      font-size: 1.3rem; }
+      font-size: 3rem; }
     .sidebar .sidebar-wrapper .line {
       display: block; }
     .sidebar .sidebar-wrapper .social-icons {
