@@ -198,11 +198,6 @@ html, body {
       .sidebar .sidebar-wrapper nav li a:hover, .sidebar .sidebar-wrapper nav li a.active {
         background: transparent;
         border-right: 30px solid #e3a478; }
-    .sidebar .sidebar-wrapper .line {
-      display: none;
-      width: 85%;
-      border-color: #745946;
-      margin: 0 auto; }
     .sidebar .sidebar-wrapper .social-icons {
       padding-left: 0px;
       margin: 80px auto 0 40px; }
@@ -245,8 +240,6 @@ html, body {
       text-align: center;
       padding: 10px;
       font-size: 3rem; }
-    .sidebar .sidebar-wrapper .line {
-      display: block; }
     .sidebar .sidebar-wrapper .social-icons {
       margin: 0 auto; } }
 
