@@ -2,7 +2,7 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
   .config(['$routeProvider',  function($routeProvider){
 
     $routeProvider
-        .when('/home', {
+        .when('/', {
             templateUrl: 'templates/home.html',
             controller: 'MainCtrl'
         })
