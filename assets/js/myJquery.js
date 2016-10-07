@@ -14,7 +14,7 @@ function toggleSideBar(){
 
     $open.on('click', function(){
         $sidebar.css('left', '0%').addClass('js-fade');
-        $main.css('margin-left', '215px');
+        $main.css('margin-left', '0px');
         $overlay.prependTo($main);
     });
 
