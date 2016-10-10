@@ -24,8 +24,8 @@ function toggleSideBar(){
         $overlay.remove();
     });
 
-    $('a[href^="#"]').on('click', function(event){
-        event.preventDefault();
+    $('a[href^="#"]').on('click', function(e){
+        e.preventDefault();
         $sidebar.css('left', '-100%').removeClass('js-fade');
         $main.css('margin-left', '0px');
         $overlay.remove();
