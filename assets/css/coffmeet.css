@@ -120,7 +120,7 @@ html, body {
 
 @media only screen and (min-width: 46em) {
   #main #intro {
-    height: auto;
+    height: 100vh;
     padding-bottom: 5%; }
   #main #shop, #main #coffee {
     height: 600px; }
@@ -764,11 +764,11 @@ p {
 .webshop-page {
   background-color: #e2d5c1;
   padding-top: 60px; }
-  .webshop-page section#intro {
-    height: auto !important; }
-    .webshop-page section#intro .intro-heading {
+  .webshop-page #intro {
+    height: auto; }
+    .webshop-page #intro .intro-heading {
       text-align: center; }
-      .webshop-page section#intro .intro-heading h3 {
+      .webshop-page #intro .intro-heading h3 {
         color: #745946;
         text-transform: uppercase; }
   .webshop-page #products {
@@ -805,11 +805,12 @@ p {
         top: 0;
         left: 0;
         z-index: 1; }
-  @media only screen and (max-width: 768px) {
-    .webshop-page #products .product-box {
-      width: 300px !important;
-      margin-right: auto;
-      margin-left: auto; } }
+
+@media only screen and (max-width: 768px) {
+  #products .product-box {
+    width: 300px !important;
+    margin-right: auto;
+    margin-left: auto; } }
 
 @media only screen and (max-width: 29em) {
   #products .product-box {
