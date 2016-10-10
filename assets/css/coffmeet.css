@@ -761,7 +761,7 @@ p {
   background-color: #e2d5c1;
   padding-top: 60px; }
   .webshop-page .intro {
-    height: auto; }
+    height: auto !important; }
     .webshop-page .intro .intro-heading {
       text-align: center; }
       .webshop-page .intro .intro-heading h3 {
