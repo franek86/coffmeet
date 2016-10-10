@@ -24,11 +24,10 @@ function toggleSideBar(){
         $overlay.remove();
     });
 
-    $('a[href^="#"]').on('click', function(){
+    $('a[href^="#"]').on('click', function(event){
         $sidebar.css('left', '-100%').removeClass('js-fade');
         $main.css('margin-left', '0px');
         $overlay.remove();
-        return false;
     });
 
 }
