@@ -9,13 +9,13 @@
     padding-left: 0
     overflow-x: hidden
     background:
-        color: $primary-color
+      color: $primary-color
     z-index: 10
 
     &.js-fade
-        animation-name: fade
-        animation-duration: 2s
-        animation-fill-mode: both
+      animation-name: fade
+      animation-duration: 2s
+      animation-fill-mode: both
 
     .sidebar-wrapper
         height: 100%
@@ -31,7 +31,8 @@
           cursor: pointer
 
           img
-            height: 50px
+            max-height: 70px
+
 
         .logo
           display: none
@@ -50,45 +51,54 @@
               content: ""
               padding-right: 50%
 
-      nav
-        li
+        nav
+          li
             a
-                font:
-                    size: 2rem
-                    weight: bold
-                padding: 10px
-                text-transform: uppercase
-                color: $brown
-                transition: $trans_all
-                text-align: center
+              font:
+                size: 2rem
+                weight: bold
+              padding: 10px
+              text-transform: uppercase
+              color: $brown
+              transition: $trans_all
+              text-align: center
 
-                &:hover,
-                &.active
-                    background: transparent
-                    border-right: 30px solid $orange
+              &:hover,
+              &.active
+                background: transparent
+                border-right: 30px solid $orange
 
-      .social-icons
-          padding-left: 0px
-          margin: 40px auto
+        .social-icons
+            padding-left: 0px
+            margin: 40px auto
 
-        li
-            display: inline-block
+            li
+                display: inline-block
 
-        .icon-sprite
-            height: 30px
-            width: 30px
-            display: inline-block
-            background:
-                image: url(../img/small-icons.png)
-                repeat: no-repeat
-                position: -59px top
+            .icon-sprite
+                height: 30px
+                width: 30px
+                display: inline-block
+                background:
+                    image: url(../img/small-icons.png)
+                    repeat: no-repeat
+                    position: center
+                    size: contain
+                width: 113px
+                height: 50px
+                padding-right: 100%
 
-            &.youtube
-                background-position: -29px 0
-            &.instagram
-                background-position: 0 0
-            &.twitter
-                background-position: -89px 0
+                &:after
+                  content: ""
+                  padding-right: 50%
+                  position: -59px top
+
+                  &.youtube
+                      background-position: -29px 0
+                  &.instagram
+                      background-position: 0 0
+                  &.twitter
+                      background-position: -89px 0
 
 
 
