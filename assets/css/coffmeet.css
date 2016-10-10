@@ -120,16 +120,12 @@ html, body {
 
 @media only screen and (min-width: 46em) {
   #main #intro {
-    height: auto;
+    height: 100vh;
     padding-bottom: 5%; }
   #main #shop, #main #coffee {
     height: 600px; }
     #main #shop .box, #main #coffee .box {
       height: 100%; } }
-
-@media only screen and (min-width: 85em) {
-  #main #intro {
-    height: auto; } }
 
 .sidebar {
   display: block;
@@ -435,7 +431,6 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
-    height: 100vh;
     padding-top: 60px; }
     .home-page #intro .intro-img {
       margin: 8em auto 1.2em;
@@ -816,7 +811,7 @@ p {
     width: 100% !important; } }
 
 .product-page {
-  padding: 100px 0;
+  padding: 25vh 0;
   background-color: #e2d5c1; }
   .product-page .intro-heading h2 {
     text-align: center; }
@@ -843,7 +838,7 @@ p {
 
 .cart-page {
   background: #d4c098;
-  padding: 20vh 0; }
+  padding: 25vh 0; }
   .cart-page .panel-info {
     margin-bottom: 20px;
     border-color: transparent; }
