@@ -3,19 +3,19 @@
       color: $white-coffee
   padding-top: 60px
 
-  section#intro
-    height: auto !important
+    #intro
+      height: auto
 
-    .intro-heading
-      text-align: center
+      .intro-heading
+          text-align: center
 
-      h3
-          color: $brown
-          text-transform: uppercase
+        h3
+            color: $brown
+            text-transform: uppercase
 
-  #products
-      padding-bottom: 100px
-      margin-top: 30px
+    #products
+        padding-bottom: 100px
+        margin-top: 30px
 
       .product-box
           position: relative
@@ -44,12 +44,14 @@
               z-index: 1
 
 
-  @media only screen and (max-width: 768px)
-      #products
-          .product-box
-              width: 300px !important
-              margin-right: auto
-              margin-left: auto
+
+@media only screen and (max-width: 768px)
+    #products
+        .product-box
+            width: 300px !important
+            margin-right: auto
+            margin-left: auto
+
 
 @media only screen and (max-width: $sm-screen)
     #products
