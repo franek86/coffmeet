@@ -760,11 +760,11 @@ p {
 .webshop-page {
   background-color: #e2d5c1;
   padding-top: 60px; }
-  .webshop-page .into {
+  .webshop-page .intro {
     height: auto; }
-    .webshop-page .into .intro-heading {
+    .webshop-page .intro .intro-heading {
       text-align: center; }
-      .webshop-page .into .intro-heading h3 {
+      .webshop-page .intro .intro-heading h3 {
         color: #745946;
         text-transform: uppercase; }
   .webshop-page #products {
