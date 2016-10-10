@@ -200,19 +200,19 @@ html, body {
       margin: 40px auto; }
       .sidebar .sidebar-wrapper .social-icons li {
         display: inline-block; }
-      .sidebar .sidebar-wrapper .social-icons .icon-sprite {
-        height: 30px;
-        width: 30px;
-        display: inline-block;
-        background-image: url(../img/small-icons.png);
-        background-repeat: no-repeat;
-        background-position: -59px top; }
-        .sidebar .sidebar-wrapper .social-icons .icon-sprite.youtube {
-          background-position: -29px 0; }
-        .sidebar .sidebar-wrapper .social-icons .icon-sprite.instagram {
-          background-position: 0 0; }
-        .sidebar .sidebar-wrapper .social-icons .icon-sprite.twitter {
-          background-position: -89px 0; }
+        .sidebar .sidebar-wrapper .social-icons li .icon-sprite {
+          height: 30px;
+          width: 30px;
+          display: inline-block;
+          background-image: url(../img/small-icons.png);
+          background-repeat: no-repeat;
+          background-position: -59px top; }
+          .sidebar .sidebar-wrapper .social-icons li .icon-sprite.youtube {
+            background-position: -29px 0; }
+          .sidebar .sidebar-wrapper .social-icons li .icon-sprite.instagram {
+            background-position: 0 0; }
+          .sidebar .sidebar-wrapper .social-icons li .icon-sprite.twitter {
+            background-position: -89px 0; }
 
 @-webkit-keyframes fade {
   from {
@@ -760,11 +760,11 @@ p {
 .webshop-page {
   background-color: #e2d5c1;
   padding-top: 60px; }
-  .webshop-page .intro {
-    height: auto !important; }
-    .webshop-page .intro .intro-heading {
+  .webshop-page #intro {
+    height: auto; }
+    .webshop-page #intro .intro-heading {
       text-align: center; }
-      .webshop-page .intro .intro-heading h3 {
+      .webshop-page #intro .intro-heading h3 {
         color: #745946;
         text-transform: uppercase; }
   .webshop-page #products {
