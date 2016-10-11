@@ -50,6 +50,11 @@ function fadeDivs(){
                 $('#coffee .move-left').addClass('js-faderight');
             }
 
+            if(scrollWidth > $('.address-3').offset().top - ($(window).height() / 4)){
+                $('.address-3 .move-right').addClass('js-fadeleft');
+                $('.address-3 .move-left').addClass('js-faderight');
+            }
+
         } else {
 
             if(scrollWidth > $('#shop').offset().top - $(window).height()){
