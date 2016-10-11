@@ -50,9 +50,9 @@ function fadeDivs(){
                 $('#coffee .move-left').addClass('js-faderight');
             }
 
-            if(scrollWidth > $('#shop .address-3').offset().top - ($(window).height() / 2.4)){
-                $('#shop .address-3 .move-right').addClass('js-fadeleft');
-                $('#shop .address-3 .move-left').addClass('js-faderight');
+            if(scrollWidth > $('#shop.address-3').offset().top - ($(window).height() / 2.4)){
+                $('#shop.address-3 .move-right').addClass('js-fadeleft');
+                $('#shop.address-3 .move-left').addClass('js-faderight');
             }
 
         } else {
