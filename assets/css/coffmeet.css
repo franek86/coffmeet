@@ -118,13 +118,51 @@ html, body {
       color: #745946;
       z-index: 1; }
 
+@-webkit-keyframes fadeInLeftBig {
+  from {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInLeftBig {
+  from {
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@-webkit-keyframes fadeInRightBig {
+  from {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInRightBig {
+  from {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
 @media only screen and (min-width: 46em) {
   #main #intro {
     height: 100vh;
     padding-bottom: 5%; }
-  #main #shop, #main #coffee {
+  #main .shop-section,
+  #main .coffee-section {
     height: 600px; }
-    #main #shop .box, #main #coffee .box {
+    #main .shop-section .box,
+    #main .coffee-section .box {
       height: 100%; } }
 
 .sidebar {
@@ -596,42 +634,6 @@ p {
     -webkit-transform: translate(0, 50px);
             transform: translate(0, 50px); } }
 
-@-webkit-keyframes fadeInLeftBig {
-  from {
-    -webkit-transform: translateX(-2000px);
-            transform: translateX(-2000px); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInLeftBig {
-  from {
-    -webkit-transform: translateX(-2000px);
-            transform: translateX(-2000px); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@-webkit-keyframes fadeInRightBig {
-  from {
-    -webkit-transform: translateX(2000px);
-            transform: translateX(2000px); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
-@keyframes fadeInRightBig {
-  from {
-    -webkit-transform: translateX(2000px);
-            transform: translateX(2000px); }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none; } }
-
 @media only screen and (min-width: 46em) {
   .home-page #intro .btn-wrapp {
     display: inline; }
@@ -666,17 +668,23 @@ p {
       text-align: center; }
       .cofes-page #intro .intro-heading h1, .cofes-page #intro .intro-heading h2 {
         color: rgba(247, 246, 228, 0.4); }
-  .cofes-page .address-1 .raviolli, .cofes-page .address-2 .raviolli, .cofes-page .address-3 .raviolli {
+  .cofes-page .address-1 .raviolli,
+  .cofes-page .address-2 .raviolli,
+  .cofes-page .address-3 .raviolli {
     background-image: url("../img/img-1.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover; }
-  .cofes-page .address-1 .mall, .cofes-page .address-2 .mall, .cofes-page .address-3 .mall {
+  .cofes-page .address-1 .mall,
+  .cofes-page .address-2 .mall,
+  .cofes-page .address-3 .mall {
     background-image: url("../img/img-2.jpg");
     background-repeat: no-repeat;
     background-position: 0 center;
     background-size: cover; }
-  .cofes-page .address-1 .doe-avenue, .cofes-page .address-2 .doe-avenue, .cofes-page .address-3 .doe-avenue {
+  .cofes-page .address-1 .doe-avenue,
+  .cofes-page .address-2 .doe-avenue,
+  .cofes-page .address-3 .doe-avenue {
     background-image: url("../img/img-3.jpg");
     background-repeat: no-repeat;
     background-position: 0 center;
