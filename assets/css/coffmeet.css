@@ -603,40 +603,36 @@ p {
 @-webkit-keyframes fadeInLeftBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-            transform: translate3d(-2000px, 0, 0); }
+    -webkit-transform: translateX(-2001px);
+            transform: translateX(-2001px); }
   to {
-    opacity: 1;
     -webkit-transform: none;
             transform: none; } }
 
 @keyframes fadeInLeftBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-            transform: translate3d(-2000px, 0, 0); }
+    -webkit-transform: translateX(-2001px);
+            transform: translateX(-2001px); }
   to {
-    opacity: 1;
     -webkit-transform: none;
             transform: none; } }
 
 @-webkit-keyframes fadeInRightBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-            transform: translate3d(2000px, 0, 0); }
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px); }
   to {
-    opacity: 1;
     -webkit-transform: none;
             transform: none; } }
 
 @keyframes fadeInRightBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-            transform: translate3d(2000px, 0, 0); }
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px); }
   to {
-    opacity: 1;
     -webkit-transform: none;
             transform: none; } }
 
@@ -694,6 +690,9 @@ p {
   .cofes-page #intro {
     height: auto;
     padding: 100px 0; }
+    .cofes-page #intro .intro-heading {
+      margin-top: -webkit-calc(50% - 70vh);
+      margin-top: calc(50% - 70vh); }
     .cofes-page #intro .btn-wrapp {
       display: inline; }
       .cofes-page #intro .btn-wrapp:first-child {
@@ -765,7 +764,7 @@ p {
   background-color: #e2d5c1;
   padding-top: 60px; }
   .webshop-page #intro {
-    height: auto; }
+    height: auto !important; }
     .webshop-page #intro .intro-heading {
       text-align: center; }
       .webshop-page #intro .intro-heading h3 {
