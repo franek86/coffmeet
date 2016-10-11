@@ -607,9 +607,14 @@ p {
 @-webkit-keyframes fadeInLeftBig {
   from {
 <<<<<<< HEAD
+<<<<<<< HEAD
     opacity: 0;
     -webkit-transform: translateX(-2001px);
             transform: translateX(-2001px); }
+=======
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px); }
+>>>>>>> gh-pages
 =======
     -webkit-transform: translateX(-2000px);
             transform: translateX(-2000px); }
@@ -621,9 +626,14 @@ p {
 @keyframes fadeInLeftBig {
   from {
 <<<<<<< HEAD
+<<<<<<< HEAD
     opacity: 0;
     -webkit-transform: translateX(-2001px);
             transform: translateX(-2001px); }
+=======
+    -webkit-transform: translateX(-2000px);
+            transform: translateX(-2000px); }
+>>>>>>> gh-pages
 =======
     -webkit-transform: translateX(-2000px);
             transform: translateX(-2000px); }
@@ -635,7 +645,10 @@ p {
 @-webkit-keyframes fadeInRightBig {
   from {
 <<<<<<< HEAD
+<<<<<<< HEAD
     opacity: 0;
+=======
+>>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
     -webkit-transform: translateX(2000px);
@@ -647,7 +660,10 @@ p {
 @keyframes fadeInRightBig {
   from {
 <<<<<<< HEAD
+<<<<<<< HEAD
     opacity: 0;
+=======
+>>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
     -webkit-transform: translateX(2000px);
