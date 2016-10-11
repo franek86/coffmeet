@@ -39,18 +39,18 @@ function fadeDivs(){
 
         if($(window).width() > 756){
 
-            if(scrollWidth > $('#shop').offset().top - ($(window).height() / 2)){
+            if(scrollWidth > $('#shop').offset().top - ($(window).height() / 1.2)){
                 $('#shop .move-right').addClass('js-fadeleft');
                 $('#shop .move-left').addClass('js-faderight');
             }
 
 
-            if(scrollWidth > $('#coffee').offset().top - ($(window).height() / 3)){
+            if(scrollWidth > $('#coffee').offset().top - ($(window).height() / 1.8)){
                 $('#coffee .move-right').addClass('js-fadeleft');
                 $('#coffee .move-left').addClass('js-faderight');
             }
 
-            if(scrollWidth > $('.address-3').offset().top - ($(window).height() / 4)){
+            if(scrollWidth > $('.address-3').offset().top - ($(window).height() / 2.4)){
                 $('.address-3 .move-right').addClass('js-fadeleft');
                 $('.address-3 .move-left').addClass('js-faderight');
             }
