@@ -599,40 +599,36 @@ p {
 @-webkit-keyframes fadeInLeftBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-            transform: translate3d(-2000px, 0, 0); }
+    -webkit-transform: translateX(-2001px);
+            transform: translateX(-2001px); }
   to {
-    opacity: 1;
     -webkit-transform: none;
             transform: none; } }
 
 @keyframes fadeInLeftBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-            transform: translate3d(-2000px, 0, 0); }
+    -webkit-transform: translateX(-2001px);
+            transform: translateX(-2001px); }
   to {
-    opacity: 1;
     -webkit-transform: none;
             transform: none; } }
 
 @-webkit-keyframes fadeInRightBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-            transform: translate3d(2000px, 0, 0); }
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px); }
   to {
-    opacity: 1;
     -webkit-transform: none;
             transform: none; } }
 
 @keyframes fadeInRightBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-            transform: translate3d(2000px, 0, 0); }
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px); }
   to {
-    opacity: 1;
     -webkit-transform: none;
             transform: none; } }
 
