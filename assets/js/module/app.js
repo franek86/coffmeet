@@ -1,5 +1,5 @@
 var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
-  .config(['$routeProvider',  '$locationProvider', function($routeProvider, $locationProvider){
+  .config(['$routeProvider', function($routeProvider){
 
     $routeProvider
         .when('/', {
@@ -43,6 +43,4 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
             redirectTo: '/404',
             templateUrl: 'templates/404.html'
         });
-
-      $locationProvider.html5Mode(true);
   }]);
