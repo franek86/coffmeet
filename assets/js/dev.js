@@ -1,8 +1,8 @@
 var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
-  .config(['$routeProvider',  '$locationProvider', function($routeProvider, locationProvider){
+  .config(['$routeProvider',  '$locationProvider', function($routeProvider, $locationProvider){
 
     $routeProvider
-        .when('/coffmeet/', {
+        .when('/', {
             templateUrl: 'templates/home.html',
             controller: 'MainCtrl'
         })
