@@ -58,24 +58,18 @@ function fadeDivs(){
         } else {
 
             if(scrollWidth > $('#anim-shop').offset().top - $(window).height()){
-                $('.bg.shop').css({
-                    'background-position' : 'center' + (scrollWidth - $('#anim-shop').offset().top)  + 'px',
-                    'background-attachment' : 'scroll'
-                });
+                $('#anim-shop .move-right').css({'opacity' : 1});
+                $('#anim-shop .move-left').css({'opacity' : 1});
             }
 
             if(scrollWidth > $('#anim-coffee').offset().top - $(window).height()){
-                $('.bg.coffee').css({
-                    'background-position' : 'center' + (scrollWidth - $('#anim-coffee').offset().top)  + 'px',
-                    'background-attachment' : 'scroll'
-                });
+                $('#anim-coffee .move-right').css({'opacity' : 1});
+                $('#anim-coffee .move-left').css({'opacity' : 1});
             }
 
             if(scrollWidth > $('#anim-avenue').offset().top - $(window).height()){
-                $('.bg.doe-avenue').css({
-                    'background-position' : 'center' + (scrollWidth - $('#anim-avenue').offset().top)  + 'px',
-                    'background-attachment' : 'scroll'
-                });
+                $('#anim-avenue .move-right').css({'opacity' : 1});
+                $('#anim-avenue .move-left').css({'opacity' : 1});
             }
         }
 

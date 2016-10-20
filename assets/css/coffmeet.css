@@ -82,20 +82,24 @@ html, body {
         html #main-content #main .padding-none .box .desc, body #main-content #main .padding-none .box .desc {
           padding: 4.2em 10% 0px;
           text-align: justify; }
-    html #main-content .move-right.js-fadeleft, body #main-content .move-right.js-fadeleft {
-      -webkit-animation-name: fadeInLeftBig;
-              animation-name: fadeInLeftBig;
-      -webkit-animation-duration: 2.1s;
-              animation-duration: 2.1s;
-      -webkit-animation-fill-mode: both;
-              animation-fill-mode: both; }
-    html #main-content .move-left.js-faderight, body #main-content .move-left.js-faderight {
-      -webkit-animation-name: fadeInRightBig;
-              animation-name: fadeInRightBig;
-      -webkit-animation-duration: 2s;
-              animation-duration: 2s;
-      -webkit-animation-fill-mode: both;
-              animation-fill-mode: both; }
+    html #main-content .move-right, body #main-content .move-right {
+      opacity: 0; }
+      html #main-content .move-right.js-fadeleft, body #main-content .move-right.js-fadeleft {
+        -webkit-animation-name: fadeInLeftBig;
+                animation-name: fadeInLeftBig;
+        -webkit-animation-duration: 2.1s;
+                animation-duration: 2.1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both; }
+    html #main-content .move-left, body #main-content .move-left {
+      opacity: 0; }
+      html #main-content .move-left.js-faderight, body #main-content .move-left.js-faderight {
+        -webkit-animation-name: fadeInRightBig;
+                animation-name: fadeInRightBig;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both; }
     html #main-content .arrow-down, body #main-content .arrow-down {
       width: 25px;
       height: 37px;
