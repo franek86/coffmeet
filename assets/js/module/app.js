@@ -26,10 +26,6 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
             templateUrl: 'templates/contact.html',
             controller: 'ContactPageCtrl'
         })
-        .when('/account', {
-            templateUrl: 'templates/account.html',
-            controller: 'MainCtrl'
-        })
         .when('/cart', {
             templateUrl: 'templates/cart.html',
             controller: 'MainCtrl'
