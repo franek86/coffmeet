@@ -465,6 +465,86 @@ p {
     text-transform: uppercase;
     padding-left: 30px; }
 
+login {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 1;
+  cursor: pointer; }
+  login .loginItems {
+    display: inline-block; }
+    login .loginItems .signIn,
+    login .loginItems .signUp {
+      position: relative;
+      display: inline-block;
+      width: 100px;
+      line-height: 2.5;
+      margin-right: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      background-color: #e3a478;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      -webkit-transition: all .5s linear;
+      transition: all .5s linear; }
+      login .loginItems .signIn.signUp,
+      login .loginItems .signUp.signUp {
+        background-color: #ea7727;
+        margin-right: 0px; }
+      login .loginItems .signIn:hover,
+      login .loginItems .signUp:hover {
+        background-color: #745946; }
+    login .loginItems .signInDropdown,
+    login .loginItems .signUpDropdown {
+      position: absolute;
+      top: 35px;
+      width: 213px;
+      padding: 30px 0;
+      background-color: rgba(227, 164, 120, 0.7);
+      -webkit-border-bottom-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+      -webkit-border-bottom-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+      -webkit-transition: all 500ms ease-in;
+      transition: all 500ms ease-in; }
+      login .loginItems .signInDropdown input,
+      login .loginItems .signUpDropdown input {
+        width: 92%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 4%;
+        border: none;
+        color: white;
+        background-color: #745946;
+        line-height: 3;
+        margin-bottom: 10px; }
+        login .loginItems .signInDropdown input:focus,
+        login .loginItems .signUpDropdown input:focus {
+          outline-color: white; }
+        login .loginItems .signInDropdown input[type="submit"],
+        login .loginItems .signUpDropdown input[type="submit"] {
+          width: 80%;
+          background: #745946;
+          color: white;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px; }
+
+@media only screen and (max-width: 29em) {
+  login {
+    right: 0; }
+    login .loginItems .signIn,
+    login .loginItems .signUp {
+      display: block;
+      width: 90px;
+      line-height: 2;
+      margin-bottom: 10px; }
+    login .loginItems .signInDropdown,
+    login .loginItems .signUpDropdown {
+      top: 66px;
+      right: 10px; } }
+
 .home-page {
   position: relative;
   padding: 0; }
@@ -906,7 +986,7 @@ p {
 
 @media only screen and (min-width: 46em) {
   .item-box .img-responsive {
-    max-width: 20%; } }
+    max-width: 50%; } }
 
 .checkout-page {
   padding-top: 60px;
