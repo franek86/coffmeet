@@ -1,0 +1,23 @@
+<div class="loginItems">
+
+  <div class="signIn" ng-click="signIn = !signIn" ng-class="{ active: signIn }">Sign in</div>
+  <div class="signUp" ng-click="signUp = !signUp" ng-class="{ active: signUp }">Sign up</div>
+
+  <div class="signInDropdown" ng-show="signIn">
+    <form class="loginForm" action="" method="post">
+      <input type="email" name="email" id="loginEmail" value="" placeholder="Your E-mail">
+      <input type="password" name="password" id="password" value="" placeholder="Your password">
+      <input type="submit" class="small-btn-submit" value="Submit" />
+    </form>
+  </div>
+
+  <div class="signUpDropdown" ng-show="signUp">
+    <form class="loginForm" action="" method="post">
+      <input type="name" name="name" id="loginName" value="" placeholder="Your Username">
+      <input type="email" name="email" id="loginEmail" value="" placeholder="Your E-mail">
+      <input type="password" name="password" id="password" value="" placeholder="Your password">
+      <input type="submit" class="small-btn-submit" value="Create an account" />
+    </form>
+  </div>
+
+</div>

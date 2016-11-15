@@ -1,6 +1,6 @@
 var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
-  .config(['$routeProvider',  function($routeProvider){
 
+  .config(['$routeProvider', function($routeProvider){
     $routeProvider
         .when('/', {
             templateUrl: 'templates/home.html',
@@ -25,10 +25,6 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
         .when('/contact', {
             templateUrl: 'templates/contact.html',
             controller: 'ContactPageCtrl'
-        })
-        .when('/account', {
-            templateUrl: 'templates/account.html',
-            controller: 'MainCtrl'
         })
         .when('/cart', {
             templateUrl: 'templates/cart.html',
@@ -143,13 +139,23 @@ app.controller('MainCtrl', ['$scope', '$http', '$routeParams','$localStorage', f
     }
   }
 
+  
+
 
 }]);
 
 app.directive('cartIcon', function(){
   return{
     restrict: 'E',
-    templateUrl: 'https://franek86.github.io/coffmeet/templates/cartIcon.html',
+    templateUrl: 'templates/cartIcon.html',
+    controller: 'MainCtrl'
+  }
+});
+
+app.directive('login', function(){
+  return{
+    restrict: 'E',
+    templateUrl: 'templates/login.html',
     controller: 'MainCtrl'
   }
 });

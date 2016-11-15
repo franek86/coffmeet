@@ -1,6 +1,6 @@
 var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
-  .config(['$routeProvider',  function($routeProvider){
 
+  .config(['$routeProvider', function($routeProvider){
     $routeProvider
         .when('/', {
             templateUrl: 'templates/home.html',
@@ -25,10 +25,6 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
         .when('/contact', {
             templateUrl: 'templates/contact.html',
             controller: 'ContactPageCtrl'
-        })
-        .when('/account', {
-            templateUrl: 'templates/account.html',
-            controller: 'MainCtrl'
         })
         .when('/cart', {
             templateUrl: 'templates/cart.html',
