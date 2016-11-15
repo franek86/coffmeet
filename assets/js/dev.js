@@ -1,9 +1,5 @@
 var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
-<<<<<<< HEAD
-  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
-=======
   .config(['$routeProvider', function($routeProvider){
->>>>>>> origin/gh-pages
 
     $routeProvider
         .when('/', {
@@ -43,11 +39,6 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
             redirectTo: '/404',
             templateUrl: 'templates/404.html'
         });
-<<<<<<< HEAD
-
-        $locationProvider.html5Mode(true);
-=======
->>>>>>> origin/gh-pages
   }]);
 
 app.controller("ContactPageCtrl", ['$scope', '$http', function($scope, $http){
