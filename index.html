@@ -2,7 +2,7 @@
 <html lang="en" ng-app="coffMeet">
 
     <head>
-        <base href="/coffmeet/">
+        <base href="/">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +10,10 @@
         <title>Coffmeet</title>
 
         <!-- Boostrap and font-awesome in deps.css -->
-        <link rel="stylesheet" href="https://franek86.github.io/coffmeet/assets/css/deps.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="../assets/css/deps.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <!-- Main CSS style -->
-        <link rel="stylesheet" href="https://franek86.github.io/coffmeet/assets/css/coffmeet.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="../assets/css/coffmeet.css" media="screen" title="no title" charset="utf-8">
 
     </head>
 
@@ -32,13 +32,13 @@
               <nav>
 
                   <ul class="nav nav-sidebar">
-                      <li ng-class="{active: isActive('/home')}"><a href="./">Home</a></li>
-                      <li ng-class="{active: isActive('/cofes')}"><a href="#cofes">Cofes</a></li>
-                      <li ng-class="{active: isActive('/about')}"><a href="#about">About</a></li>
-                      <li ng-class="{active: isActive('/shop')}"><a href="#products">Shop</a></li>
-                      <li ng-class="{active: isActive('/contact')}"><a href="#contact">Contact</a></li>
-                      <li ng-class="{active: isActive('/account')}"><a href="#account">Account</a></li>
-                      <li ng-class="{active: isActive('/cart')}"><a href="#cart">Cart</a></li>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/cofes">Cofes</a></li>
+                      <li><a href="/about">About</a></li>
+                      <li><a href="/products">Shop</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                      <li><a href="/account">Account</a></li>
+                      <li><a href="/cart">Cart</a></li>
                   </ul>
 
               </nav>
@@ -62,7 +62,7 @@
                 <div id="main-content" ng-view></div><!--end main-content-->
 
                 <!-- FOOTER -->
-                <footer ng-include="'https://franek86.github.io/coffmeet/templates/footer.html'"></footer>
+                <footer ng-include="'templates/footer.html'"></footer>
 
             </div><!--end row-->
         </div><!--end container-fluid-->
@@ -70,10 +70,10 @@
     </body>
 
     <!-- Javascript libraries in deps.js -->
-    <script src="https://franek86.github.io/coffmeet/assets/js/deps.js"></script>
+    <script src="../assets/js/deps.js"></script>
     <!-- Angular js in dev.js-->
-    <script src="https://franek86.github.io/coffmeet/assets/js/dev.js"></script>
+    <script src="../assets/js/dev.js"></script>
     <!-- My Jquery script -->
-    <script src="https://franek86.github.io/coffmeet/assets/js/myJquery.js"></script>
+    <script src="../assets/js/myJquery.js"></script>
 
 </html>
