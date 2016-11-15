@@ -61,6 +61,7 @@ function fadeDivs(){
             if(scrollWidth > $('#anim-shop').offset().top - $(window).height()){
                 $('#anim-shop .move-right').css({'opacity' : 1});
                 $('#anim-shop .move-left').css({'opacity' : 1});
+<<<<<<< HEAD
             }
 
             if(scrollWidth > $('#anim-coffee').offset().top - $(window).height()){
@@ -68,6 +69,15 @@ function fadeDivs(){
                 $('#anim-coffee .move-left').css({'opacity' : 1});
             }
 
+=======
+            }
+
+            if(scrollWidth > $('#anim-coffee').offset().top - $(window).height()){
+                $('#anim-coffee .move-right').css({'opacity' : 1});
+                $('#anim-coffee .move-left').css({'opacity' : 1});
+            }
+
+>>>>>>> origin/gh-pages
             if(scrollWidth > $('#anim-avenue').offset().top - $(window).height()){
                 $('#anim-avenue .move-right').css({'opacity' : 1});
                 $('#anim-avenue .move-left').css({'opacity' : 1});

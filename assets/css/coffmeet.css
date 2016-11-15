@@ -158,11 +158,14 @@ html, body {
     -webkit-transform: none;
             transform: none; } }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 46em) {
   .move-left,
   .move-right {
     opacity: 1; } }
 
+=======
+>>>>>>> origin/gh-pages
 @media only screen and (min-width: 46em) {
   #main #intro {
     padding-bottom: 5%; }
