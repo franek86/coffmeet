@@ -39,7 +39,6 @@ var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
             redirectTo: '/404',
             templateUrl: 'templates/404.html'
         });
-
   }]);
 
 app.controller("ContactPageCtrl", ['$scope', '$http', function($scope, $http){

@@ -56,17 +56,11 @@ function fadeDivs(){
                 $('#anim-avenue .move-left').addClass('js-faderight');
             }
 
-            if(scrollWidth > $('.address-3').offset().top - ($(window).height() / 4)){
-                $('.address-3 .move-right').addClass('js-fadeleft');
-                $('.address-3 .move-left').addClass('js-faderight');
-            }
-
         } else {
 
             if(scrollWidth > $('#anim-shop').offset().top - $(window).height()){
                 $('#anim-shop .move-right').css({'opacity' : 1});
                 $('#anim-shop .move-left').css({'opacity' : 1});
-
             }
 
             if(scrollWidth > $('#anim-coffee').offset().top - $(window).height()){

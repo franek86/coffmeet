@@ -786,7 +786,6 @@ login {
 
 @media only screen and (min-width: 46em) {
   .cofes-page #intro {
-    height: auto;
     padding: 100px 0; }
     .cofes-page #intro .intro-heading {
       margin-top: 15%; }
