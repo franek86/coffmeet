@@ -9,7 +9,7 @@ var gulp    = require('gulp'),
 gulp.task('browser-sync', ['sass'], function(){
   browserSync({
     server: {
-      baseDir: '/'
+      baseDir: './'
     }
   });
 });
