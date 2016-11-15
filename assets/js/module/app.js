@@ -1,5 +1,5 @@
 var app = angular.module('coffMeet', ['ngRoute', 'ngStorage'])
-  .config(['$routeProvider', function($routeProvider){
+  .config(['$locationProvider','$routeProvider', function($locationProvider,$routeProvider){
 
     $routeProvider
         .when('/', {
