@@ -553,6 +553,7 @@ login {
   position: relative;
   padding: 0; }
   .home-page #intro {
+    height: 100vh;
     background-image: url("../img/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
