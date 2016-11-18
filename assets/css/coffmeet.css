@@ -553,7 +553,6 @@ login {
   position: relative;
   padding: 0; }
   .home-page #intro {
-    height: 100vh;
     background-image: url("../img/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -724,12 +723,14 @@ login {
             transform: translate(0, 50px); } }
 
 @media only screen and (min-width: 46em) {
-  .home-page #intro .btn-wrapp {
-    display: inline; }
-    .home-page #intro .btn-wrapp:first-child {
-      margin-right: 1.3em; }
-    .home-page #intro .btn-wrapp:last-child {
-      margin-left: 1.3em; }
+  .home-page #intro {
+    height: 100vh; }
+    .home-page #intro .btn-wrapp {
+      display: inline; }
+      .home-page #intro .btn-wrapp:first-child {
+        margin-right: 1.3em; }
+      .home-page #intro .btn-wrapp:last-child {
+        margin-left: 1.3em; }
   .home-page .item-box .overlay img {
     top: -webkit-calc(50% - 50px);
     top: calc(50% - 50px);
@@ -747,11 +748,11 @@ login {
   position: relative;
   padding: 0; }
   .cofes-page #intro {
+    height: 100vh;
     background-image: url("../img/cofes-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
-    height: 100vh;
     padding-top: 90px; }
     .cofes-page #intro .intro-heading {
       text-align: center;
@@ -784,7 +785,7 @@ login {
   .cofes-page #intro {
     padding: 100px 0; }
     .cofes-page #intro .intro-heading {
-      margin-top: 15%; }
+      margin-top: 40%; }
     .cofes-page #intro .btn-wrapp {
       display: inline; }
       .cofes-page #intro .btn-wrapp:first-child {
