@@ -158,6 +158,10 @@ html, body {
     -webkit-transform: none;
             transform: none; } }
 
+@media only screen and (min-width: 29em) {
+  body {
+    font-size: 12px; } }
+
 @media only screen and (max-width: 46em) {
   .move-left,
   .move-right {
