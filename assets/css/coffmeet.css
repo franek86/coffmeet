@@ -752,7 +752,6 @@ login {
   position: relative;
   padding: 0; }
   .cofes-page #intro {
-    height: 100vh;
     background-image: url("../img/cofes-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -788,8 +787,6 @@ login {
 @media only screen and (min-width: 46em) {
   .cofes-page #intro {
     padding: 100px 0; }
-    .cofes-page #intro .intro-heading {
-      margin-top: 40%; }
     .cofes-page #intro .btn-wrapp {
       display: inline; }
       .cofes-page #intro .btn-wrapp:first-child {
