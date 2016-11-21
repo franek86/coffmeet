@@ -759,7 +759,8 @@ login {
     background-position: top left;
     padding-top: 90px; }
     .cofes-page #intro .intro-heading {
-      text-align: center; }
+      text-align: center;
+      padding-top: 15%; }
       .cofes-page #intro .intro-heading h1, .cofes-page #intro .intro-heading h2 {
         color: rgba(247, 246, 228, 0.4); }
   .cofes-page .address-1 .raviolli,
